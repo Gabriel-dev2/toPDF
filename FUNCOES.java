@@ -90,3 +90,20 @@
 		String vRetorno = vElementos.first() == null? "" : vElementos.first().text();
 		return vRetorno;
 	}
+
+//função para converter o retorno html em um xml para facilitar na extração de retorno
+private String xmlReturn(String input){
+	String doc;
+	if(input.contains("")){
+		temp = DocumentoMetodos.getConteudoMarcadores(input, "", "", false);
+		String temp = "";
+	}
+	"<?xml version=\"1.0\" encoding=\"UTF-8\"?>"+
+	"<>"+
+	"<>"+
+	"<>"+input+"</>"+
+	"</>"+
+	"<>"+
+	"<>"+doc+"</>"+
+	"</>";
+}
